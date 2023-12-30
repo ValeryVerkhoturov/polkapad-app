@@ -6,6 +6,7 @@ import { Button } from '@/components/common/Button';
 export const RightBlock = () => {
   return (
     <Flex
+      display={{ base: 'none', md: 'block' }}
       backgroundColor="#fff"
       padding="32px"
       marginLeft="40px"

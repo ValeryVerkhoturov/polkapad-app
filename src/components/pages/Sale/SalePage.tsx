@@ -18,10 +18,9 @@ export const SalePage = () => {
         backgroundRepeat="no-repeat"
         alignItems="center"
         justifyContent="center"
-        height="480px"
       >
         <Flex
-          padding={['76px 16px 119px', '76px 16px 119px', '76px 115px 119px']}
+          padding={{ base: '50px 16px 50px', md: '76px 115px 119px' }}
           backgroundSize="35%"
           backgroundPosition={['100%', '100%', '70% 100%']}
           backgroundRepeat="no-repeat"
@@ -67,16 +66,20 @@ export const SalePage = () => {
         </Flex>
       </Flex>
       <Flex
-        padding="71px 140px"
+        padding={{ base: '16px', lg: '71px 140px' }}
         backgroundColor="background.light"
         width="100%"
         flexDirection="column"
       >
         <Flex position="relative">
-          <Flex width="calc(100% - 400px)" flexDirection="column" gap="56px">
+          <Flex
+            width={{ base: '100%', md: 'calc(100% - 400px)' }}
+            flexDirection="column"
+            gap="56px"
+          >
             <Image
               src="/images/polka3.png"
-              maxHeight="428px"
+              maxHeight={{ base: '300px', md: '428px' }}
               width="100%"
               objectFit="cover"
               borderRadius="8px"

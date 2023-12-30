@@ -55,19 +55,19 @@ export const LaunchpadPage = () => {
             Launchpad
           </Heading>
 
-          <HeaderFlex flexDirection="column">
+          <HeaderFlex flexDirection={['column', 'row']}>
             <BannerText>
               Stakers will receive their yield rewards only at the end of their
               Staking Period when they unstake/restake their tokens.
             </BannerText>
           </HeaderFlex>
-          <HeaderFlex gap="56px" marginTop="64px">
+          <HeaderFlex gap={['16px', '56px']} marginTop={['32px', '64px']}>
             <BannerFlex>
               <BannerNumber>1,532,941</BannerNumber>
               <BannerText>Followers</BannerText>
             </BannerFlex>
             <BannerFlex>
-              <BannerNumber>$ 122,424,470,150</BannerNumber>
+              <BannerNumber>$&nbsp;122,424,470,150</BannerNumber>
               <BannerText>Amount</BannerText>
             </BannerFlex>
             <BannerFlex>
@@ -80,7 +80,7 @@ export const LaunchpadPage = () => {
       <Flex flexDirection="column" width="100%">
         <Flex
           position="relative"
-          padding={['40px 16px 40px', '40px 16px 40px', '56px 140px 56px']}
+          padding={{ base: '40px 16px 40px', lg: '56px 140px 56px' }}
           background="background.gray"
           gap="12px"
           flexDirection={['column', 'column', 'row']}

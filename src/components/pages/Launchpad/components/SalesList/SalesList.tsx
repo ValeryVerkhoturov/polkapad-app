@@ -18,7 +18,11 @@ export const SalesList = () => {
       </Text>
 
       <Flex marginTop="56px" backgroundColor="#fff" borderRadius="8px">
-        <Image src="/images/polka2.png" width="calc((100%-40px) / 2)" />
+        <Image
+          src="/images/polka2.png"
+          display={{ base: 'none', lg: 'block' }}
+          width="calc((100%-40px) / 2)"
+        />
         <Flex padding="26px 40px" flexDirection="column">
           <Flex>
             <Image
